@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Wno-c++11-extensions main.cpp -o main && ./main test2.txt

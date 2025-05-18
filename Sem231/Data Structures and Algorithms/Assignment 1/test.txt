@@ -1,0 +1,25 @@
+MAXSIZE 8
+RED person1 67
+RED person2 -32
+RED person3 -94
+RED person4 85
+RED person5 70
+RED person6 26
+RED person7 37
+RED person8 13
+RED person9 -18
+RED person10 71
+RED person11 58
+RED person12 -26
+RED person13 17
+DOMAIN_EXPANSION
+RED person14 -63
+RED person15 -94
+RED person16 -24
+RED person17 -50
+RED person18 -17
+RED person19 7
+RED person20 -78
+REVERSAL
+LIGHT -2
+LIGHT 0
