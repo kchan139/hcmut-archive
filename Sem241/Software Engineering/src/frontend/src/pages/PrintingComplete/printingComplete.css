@@ -1,0 +1,74 @@
+.printingComplete {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full view height */
+}
+
+.background_PrintingComplete {
+    height: 100vh;
+    position: relative;
+    flex-grow: 1; /* Take up all available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image_PrintingComplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place behind all other content */
+}
+
+.content_PrintingComplete {
+    position: relative;
+    justify-content: center;
+    padding: 40px 20px;
+    z-index: 1; /* Ensure it sits above the background */
+    margin-bottom: 10%;
+}
+
+.border_PrintingComplete {
+    width: 1000px;
+    height: 60vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+
+.header_PrintingComplete {
+    color: #001C64;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    align-self: stretch;
+}
+
+.line1_PrintingComplete {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    align-self: stretch;
+}
+
+.line2_PrintingComplete {
+    color: #000;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}

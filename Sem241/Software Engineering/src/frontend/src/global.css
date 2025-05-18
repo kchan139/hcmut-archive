@@ -1,0 +1,36 @@
+.button-login {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+}
+
+.button-login:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+.button-choose-file {
+    background-color: white; /* Set the background color to black */
+    color: black; /* Set the text color to white */
+}
+
+.button-choose-file:hover {
+    background-color: #999; /* Darker shade on hover */
+}
+
+.button-next {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+}
+
+.button-next:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+.button-back {
+    background-color: white; /* Set the background color to black */
+    color: black; /* Set the text color to white */
+    border: 0.5px solid black;
+}
+
+.button-back:hover {
+    background-color: #999; /* Darker shade on hover */
+}

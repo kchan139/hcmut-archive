@@ -1,0 +1,146 @@
+.icon-black path {
+    stroke: black;
+  }
+
+.icon-search {
+position: absolute;
+left: 10px; /* Adjust for spacing inside the input */
+top: 50%; /* Center vertically */
+transform: translateY(-50%); /* Fix alignment */
+pointer-events: none; /* Make the icon unclickable */
+font-size: 1.2rem; /* Optional size */
+}
+
+.manageprinter-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ext-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonTable {
+    font-family: Inter, sans-serif; /* Match your Figma font */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white; /* Adjust per design */
+    box-shadow: none;
+    background: none; /* Ensures no background is visible */
+    border: none; /* Removes the border */
+    padding: 0; /* Removes extra space caused by padding */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    outline: none; /* Removes focus outline if it appears */
+}
+
+.printer-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+
+  .printer-card-sm {
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-size: 16px; /* Ensure text is visible */
+    color: #000; /* Text color for visibility */
+  }
+
+  .printer-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .printer-info span {
+    font-size: 16px; /* Ensure text is visible */
+    color: #000; /* Text color for visibility */
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+ /* Checkbox checked state */
+  input[type="checkbox"]:checked {
+    background-color: white;
+    border-color: #555;
+  }
+  
+  /* Add the black dot for checked state */
+  input[type="checkbox"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+.add-printer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-printer-input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    background-color: white;
+    color: black
+  }
+  
+  .add-printer-button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-printer-button:hover {
+    background-color: #555;
+  }
+  
+  

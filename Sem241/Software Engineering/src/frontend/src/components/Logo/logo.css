@@ -1,0 +1,73 @@
+.logo {
+    /* align-items: flex-start;
+    background-color: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50px;
+    padding: 1px 10px;
+    position: relative; */
+
+    display: inline-flex;
+    height: 50px;
+    padding: 1px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo .frame {
+    /* align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative; */
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .element-logobachkhoatoi {
+    /* height: 24px;
+    position: relative;
+    width: 24.14px; */
+
+    width: 24.144px;
+    height: 24px;
+}
+
+.logo .text-wrapper {
+    /* -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+        180deg,
+        rgb(20, 136, 219) 40.29%,
+        rgb(3, 43, 145) 64.15%
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.20px;
+    line-height: 48px;
+    margin-top: -1.00px;
+    position: relative;
+    text-fill-color: transparent;
+    white-space: nowrap;
+    width: fit-content; */
+
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 171.429% */
+    letter-spacing: 4.2px;
+
+    background: linear-gradient(180deg, #1488DB 40.29%, #032B91 64.15%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

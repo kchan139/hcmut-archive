@@ -1,0 +1,130 @@
+.footer {
+    /* display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 0px 50px 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #FFF; */
+
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    background-color: #fff; /* Optional background color */
+}
+
+.content {
+    display: flex;
+    padding: 10px 0px 36px 0px;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.pane-left{
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.pane-right {
+    display: flex;
+    width: 100%;
+    /* padding-left: 40px; */
+    padding: 0px 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.frame-7{
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.box-links {
+    display: flex;
+    width: 360px;
+    padding: 14px 10px 24px 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.body-links-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.body-links-right {
+    display: flex;
+    max-height: 140px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.footer-text,
+.link,
+.contact-text {
+    color: #000;
+
+    /* Body 3 */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.frame-icon {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically align items */
+    gap: var(--Space-200, 8px);
+}

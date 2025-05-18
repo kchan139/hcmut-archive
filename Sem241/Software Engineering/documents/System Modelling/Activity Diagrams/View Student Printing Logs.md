@@ -1,0 +1,3 @@
+This activity diagram depicts the process of viewing printing logs in the Student Smart Printing Service. Two actors are involved: the student and the SPSO (Student Printing Service Officer). If a blank search (no filters applied) is performed, the system displays all results. If specific filters (e.g., date ranges, printers) are applied, the system retrieves and displays the relevant logs. The SPSO can also filter by student ID to view logs for a particular student. If no logs are found or the search is invalid, the user is prompted to re-enter the search criteria.
+
+![Print a Document - Activity Diagram](View_Student_Printing_Logs.png)

@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+.navbar-content {
+    display: flex;
+    width: 90vw;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.group-2 {
+    width: 418.144px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.links {
+    display: inline-flex;
+    height: 22px;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+}
+
+.navbar-button {
+    font-family: Inter, sans-serif; /* Match your Figma font */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000; /* Adjust per design */
+    background: none; /* Ensures no background is visible */
+    border: none; /* Removes the border */
+    padding: 0; /* Removes extra space caused by padding */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    outline: none; /* Removes focus outline if it appears */
+}
+
+.navbar-button:hover {
+    color: var(--sds-color-text-neutral-default); /* Add hover color if needed */
+
+    /* Body 2 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+

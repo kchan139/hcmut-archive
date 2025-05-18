@@ -1,0 +1,140 @@
+.userLog {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full view height */
+}
+
+.background_UserLog {
+    position: relative;
+    flex-grow: 1; /* Take up all available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image_UserLog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place behind all other content */
+}
+
+.content_UserLog {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    z-index: 1; /* Ensure it sits above the background */
+}
+
+.input-wrapper_UserLog {
+    position: relative;
+    width: 100%; /* Ensure the input-wrapper takes full width */
+}
+
+.searchBar_UserLog {
+    background-color: white;
+    width: 100%; /* Full width for the input */
+    padding-right: 10px; /* Space for the icon */
+    padding-left: 40px;
+    height: 40px;
+    box-sizing: border-box; /* Ensure padding doesn't affect input width */
+    border: 1px solid #ccc; /* Optional styling */
+    border-radius: 5px; /* Optional styling */
+}
+
+.icon-black path {
+    stroke: black;
+}
+
+.icon-search_UserLog {
+    position: absolute;
+    left: 10px; /* Adjust for spacing inside the input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Fix alignment */
+    pointer-events: none; /* Make the icon unclickable */
+    font-size: 1.2rem; /* Optional size */
+}
+
+.container_UserLog {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.buttonTable_UserLog {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white; /* Adjust per design */
+    box-shadow: none;
+    background: none; /* Ensures no background is visible */
+    border: none; /* Removes the border */
+    padding: 0; /* Removes extra space caused by padding */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    outline: none; /* Removes focus outline if it appears */
+}
+
+.buttonTable:hover {
+    color: #ffd700; /* Add hover color if needed */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    table-layout: fixed;
+  }
+  
+.custom-table th, .custom-table td {
+    padding: 12px 8px;
+}
+
+.custom-table th:not(:last-child) {
+    padding-left: 20px; /* Apply padding to all columns except the last one */
+  }
+
+.custom-table thead {
+    background: linear-gradient(to right, #0e619b, #032B91);
+}
+
+.custom-table tbody {
+    background: white;
+}
+
+.dropdown-row {
+    background-color: #f9f9f9;
+}
+
+.dropdown-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.dropdown-content p {
+    flex: 1 1 45%; 
+    margin: 0; 
+}
+
+.pagination {
+    margin-top: 10px;
+}

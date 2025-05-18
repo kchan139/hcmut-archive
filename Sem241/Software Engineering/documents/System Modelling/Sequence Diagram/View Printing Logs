@@ -1,0 +1,3 @@
+This diagram shows the detailed process for viewing printing logs, involving interactions between the student, SPSO, system, and database. The system filters logs based on criteria such as date range, printer, and student ID. Logs are displayed as either a summary or detailed view. Unauthorized access attempts are blocked, ensuring that only the relevant user or authorized personnel (SPSO) can view specific logs.
+
+![Authenticate via HCMUT SSO - Activity Diagram](View_Printing_Logs.png)

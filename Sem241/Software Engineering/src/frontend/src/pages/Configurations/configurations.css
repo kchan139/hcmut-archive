@@ -1,0 +1,111 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+  }
+  
+.preview-container {
+    width: 30%;
+    height: 60%; /* You can adjust the height as needed */
+    position: absolute;
+    top: 12%;
+    right: 100px;
+    overflow: hidden; /* This ensures the image does not overflow out of the container */
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.background_Configurations {
+    position: relative;
+    flex-grow: 1; /* Take up all available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-image_Configurations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place behind all other content */
+}
+
+.content_Configurations {
+    position: relative;
+    justify-content: center;
+    padding: 40px 20px;
+    z-index: 1; /* Ensure it sits above the background */
+    flex: 0 0 auto; /* Do not grow or shrink */
+}
+
+.border_Configurations {
+    width: 1000px;
+    height: 70vh;
+    flex-shrink: 0;
+    position: relative;
+    margin-bottom: 100px;
+    background: #FFF;
+}
+
+.header_Configurations {
+    height: 47px;
+    align-self: stretch;
+    margin-left: 100px;
+    margin-bottom: 75px;
+    color: #001C64;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+/* configurations.css */
+.line_Configurations {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+    margin-left: 100px;
+    margin-top: 0px;
+    line-height: 90px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.box_Configurations {
+    width: 100px; /* Set a consistent width for all boxes */
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #4e4a4a;
+    appearance: auto;
+    margin-left: 20px; /* Add margin to separate from label */
+}
+
+.button-group-configurations {
+    position: absolute;
+    bottom: 50px;
+}
+
+.button-variant-subtle {
+    --button-background-color: rgba(66, 66, 71, 0.509);
+}
+
+.button-variant-primary {
+    --button-background-color: rgb(0, 64, 255);
+}
+
+.placeholder {
+    text-align: center;
+}

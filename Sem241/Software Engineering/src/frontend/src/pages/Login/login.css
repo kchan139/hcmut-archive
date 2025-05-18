@@ -1,0 +1,119 @@
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    background: url("../../assets/background.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.login-content {
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    align-items: center;
+}
+
+.change-user-button {
+    font-family: Inter, sans-serif; /* Match your Figma font */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFF; /* Adjust per design */
+    background: none; /* Ensures no background is visible */
+    border: none; /* Removes the border */
+    padding: 0; /* Removes extra space caused by padding */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    outline: none; /* Removes focus outline if it appears */
+}
+
+.change-user-button:hover {
+    color: #AAA; /* Add hover color if needed */
+
+    /* Body 2 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.left-pane {
+    /* display: flex;
+    flex-direction: column; */
+    display: flex;
+    width: 60%;
+    padding: 50px 10px 200px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.form-caption {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group-checkbox {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.form-label {
+    color: #FFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    /* width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; */
+    width: 620px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+.form-checkbox {
+    margin-right: 8px;
+}
+
+.form-checkbox-label {
+    font-size: 14px;
+    color: #111;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}

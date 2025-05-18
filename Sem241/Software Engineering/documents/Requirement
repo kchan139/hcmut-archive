@@ -1,0 +1,111 @@
+# Requirement Elicitation
+
+## 1.1 Domain Context
+The **Student Smart Printing Service (HCMUT_SSPS)** operates within the domain of university printing services at **Ho Chi Minh City University of Technology (HCMUT)**. This system is designed to streamline document printing for students in the university.
+
+Users can upload documents, select from available printers, and configure printing options such as paper size, page count, and number of copies. The system ensures efficient printing while tracking usage through comprehensive logs that include student IDs, printer IDs, and timestamps for each print job.
+
+The service includes a page balance management feature, providing each student with a default number of A4 pages each semester and allowing them to purchase additional pages through an integrated online payment system (e.g., BKPay). Administrators, known as the **Student Printing Service Officers (SPSOs)**, can manage printer settings, adjust page limits, and configure permitted file types.
+
+Automated reports on printing activity are generated monthly and yearly, giving the SPSOs insights into usage trends. All users must authenticate through the **HCMUT_SSO** service to ensure secure access. The service is accessible via both web and mobile applications.
+
+---
+
+## 1.2 Stakeholders and Needs
+
+### **Students (Users)**
+- **Role**: Primary users of the printing service.
+- **Needs**:
+  - Upload documents, select printing options, and manage their printing balance.
+  - View personal printing logs and summaries.
+  - Purchase additional printing pages via the system.
+
+### **Student Printing Service Officer (SPSO)**
+- **Role**: Administrators of the system.
+- **Needs**:
+  - Manage printer configurations (adding, enabling, disabling printers).
+  - Configure system settings like default pages, permitted file types, and printing limits.
+  - Monitor printing activity logs and generate reports.
+  - Manage default page allocations for students each semester.
+
+### **HCMUT IT Department / System Administrators**
+- **Role**: Manage technical infrastructure.
+- **Needs**:
+  - Integrate with the university’s SSO authentication service.
+  - Handle system updates, maintenance, and performance optimization.
+
+### **University Administration (Policy Makers)**
+- **Role**: Oversee resource allocation and budget management.
+- **Needs**:
+  - Set policies like default page allocations for students.
+  - Review system-generated reports for insights.
+
+### **Payment Service Providers (e.g., BKPay, ZaloPay, MoMo)**
+- **Role**: Provide a payment gateway for purchasing additional printing pages.
+- **Needs**:
+  - Manage transactions and ensure smooth system integration.
+
+---
+
+## 1.3 Benefits of the System
+- **Students**: Convenience in printing via phone or laptop, easy payment options, and usage tracking.
+- **HCMUT IT Department**: Streamlined monitoring of printer statuses for timely maintenance.
+- **SPSOs**: Simplified tracking and management of printers, reducing manual tasks.
+- **University Administration**: Automated reports for operational insights and resource management.
+- **Payment Service Providers**: Increased transaction opportunities.
+
+---
+
+## 1.4 Functional Requirements
+
+### **1.4.1 Students (Users)**
+1. Upload document files (permitted file types only) for printing via web or mobile app.
+2. Select a printer and configure print settings (e.g., copies, paper size, one-sided/double-sided).
+3. View personal printing logs (printer ID, file name, time of printing).
+4. Confirm/cancel print settings before completion.
+5. Purchase additional pages via the integrated payment system.
+
+### **1.4.2 Student Printing Service Officer (SPSO)**
+1. Add, enable, or disable printers.
+2. Set permitted file types for printing (e.g., PDF, DOCX).
+3. View detailed logs of all student printing activities.
+4. Adjust default page allocations per semester.
+5. Automatically generate monthly and yearly usage reports.
+
+### **1.4.3 HCMUT IT Department / System Administrators**
+1. Integrate the system with **HCMUT SSO** for authentication.
+2. Monitor printer statuses and report malfunctions.
+3. Perform updates without disrupting ongoing services.
+4. Securely store printing logs and reports.
+5. Manage access rights for students, SPSO, and IT staff.
+
+### **1.4.4 University Administration (Policy Makers)**
+1. Automatically generate monthly and yearly usage reports.
+2. Access reports for budgeting and planning purposes.
+3. Set printing policies like free page allocations.
+4. Track printing efficiency for cost optimization.
+5. Maintain logs of report accesses for auditing.
+
+### **1.4.5 Payment Service Providers (e.g., BKPay, ZaloPay, MoMo)**
+1. Integrate secure payment gateways for additional page purchases.
+2. Log transactions (amount, student ID, time).
+3. Notify users and SPSOs of successful transactions.
+4. Process refunds for errors or cancellations.
+5. Support multiple payment options for convenience.
+
+---
+
+## 1.5 Non-Functional Requirements
+1. Availability: The system shall operate from 7:00 AM to 5:00 PM, Monday to Saturday.
+2. Authentication: All users must authenticate through **HCMUT_SSO**.
+3. Printer Compatibility: Support at least 80% of printers currently in use at the university.
+4. Performance: Handle up to 500 concurrent users without overloading.
+5. Upload Limit: Allow users to upload documents up to 1GB.
+6. Accessibility: Provide web access and mobile apps for Android (8.1+) and iOS (8+).
+7. Usability: Ensure ease of use through clear instructions and manuals.
+8. Data Integrity: Printing logs shall be in read-only mode.
+
+---
+
+## Notes
+This document outlines the requirements for the HCMUT Student Smart Printing Service (HCMUT_SSPS) and serves as a foundation for system development and implementation.
