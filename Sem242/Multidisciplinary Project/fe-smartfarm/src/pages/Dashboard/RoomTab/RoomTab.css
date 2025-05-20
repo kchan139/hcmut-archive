@@ -1,0 +1,29 @@
+.room-tabs {
+    display: flex;
+    gap: 10px;
+    /* margin-bottom: 10px; */
+    margin-left: 15px;
+}
+
+.room-tab {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.room-tab.active {
+    border-radius: 10px;
+    background: linear-gradient(225deg, #02C685 0%, #BBEA54 100%);
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

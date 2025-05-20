@@ -1,0 +1,143 @@
+.histogram-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.histogram {
+    display: flex;
+    height: 350px;
+    margin-top: 50px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.bar-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bar {
+    width: 60%;
+    background: linear-gradient(180deg, #02C685, #BBEA54);
+    border-radius: 4px 4px 0 0;
+    margin-top: auto;
+    transition: height 0.5s ease;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+}
+
+.bar:hover {
+    background: linear-gradient(180deg, #02C685, #BBEA54);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+}
+
+.time-label {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+    justify-self: center;
+}
+
+.value-label {
+    position: absolute;
+    top: -25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.y-axis {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+    /* This ensures that the y-axis itself ends exactly at the x-axis line */
+    
+}
+
+.y-axis-label {
+    text-align: right;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Modified x-axis to align properly with the y-axis */
+.x-axis {
+    position: absolute;
+    left: 40px;
+    right: 0;
+    bottom: 40px; /* Keep at 40px to match the space for labels */
+    height: 1px;
+    background-color: #ddd;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.date-picker-container {
+    display: flex;
+    align-items: center;
+}
+
+.date-picker {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.date-picker:focus {
+    outline: none;
+    border-color: #02C685;
+    box-shadow: 0 0 5px rgba(2, 198, 133, 0.3);
+}

@@ -1,0 +1,37 @@
+.widget {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}   
+
+.metric-widget {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.metric-title {
+    color: #000000;
+    font-family: Quicksand;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.metric-value {
+    /* font-size: 50px;
+    font-weight: bold;
+    color: #4CAF50; */
+    background: linear-gradient(180deg, #02C685 0%, #BBEA54 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-align: center; */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

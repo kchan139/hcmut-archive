@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.body {
+  background-color: #f0f9f0;
+  display: flex;
+  min-height: 100vh;
+}
